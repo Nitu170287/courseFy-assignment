@@ -1,0 +1,49 @@
+
+.student-courses{
+    
+   
+    display:flex;
+    gap:1.5rem;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+}
+.student-courses img{
+    width: 100%;
+    height: 30vh;
+}
+.courses-card{
+    border: 2px solid #f3f3f3;
+    width: 23%;
+   
+    text-align: left;
+}
+.courses-card-bottom{
+    padding: 1rem ;
+}
+.courses-card:hover{
+    box-shadow: 5px 5px 10px 1px #c7c4c4;
+}
+.progress-bar-markcom-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.inComplete-icon-text p{
+    font-size: 0.8rem;
+}
+.inComplete-icon-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.complete-icon-text p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.complete-icon-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
