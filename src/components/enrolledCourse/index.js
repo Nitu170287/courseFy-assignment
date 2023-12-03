@@ -8,7 +8,7 @@ const EnrolledCourse = ({ course }) => {
   const [percentCompleted, setPercentCompleted] = useState(
     course.percentComplete
   );
-  const [completed, setCompleted] = useState(percentCompleted == 100);
+  const [completed, setCompleted] = useState(percentCompleted === 100);
 
   return (
     <div className="courses-card">

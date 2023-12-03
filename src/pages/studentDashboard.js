@@ -11,7 +11,7 @@ import axios from "axios";
 import EnrolledCourse from "../components/enrolledCourse";
 
 const StudentDashboard = () => {
-  const { loading, studentInfo, error } = useSelector((state) => state);
+  const { loading, studentInfo } = useSelector((state) => state);
 
   const dispatch = useDispatch();
 
@@ -32,7 +32,7 @@ const StudentDashboard = () => {
   return (
     <div>
       <Header />
-      {studentInfo && (
+      {loading ? <h1>Loading...</h1>: studentInfo && (
         <div>
           <div className="course-detail">
             <span className="side-title">Name:</span> {studentInfo.name}
